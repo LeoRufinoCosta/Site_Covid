@@ -238,26 +238,18 @@
         <script>
             var ctx = document.getElementById('estad').getContext('2d');
             var chart = new Chart(ctx, {
-            type: 'doughnut',
+            type: 'line',
             data: {
                 labels: ['Casos', 'Recuperados', 'Óbitos'],
                 datasets: [{
-                    label: 'Brasil',
+                    label: 'Acre',
                     backgroundColor: ['rgb(88, 250, 88)', 'rgb(217,217,25)', 'rgb(255,0,0)'],
-                    borderColor: 'rgb(0, 0, 0)',
+                    borderColor: 'rgb(255, 255, 255)',
+                    pointRadius: '5',
                     data: [15000, 3000, 5000]
              }]
             },
-            options: {
-                title: {
-                    display: true,
-                    fontsize: 20,
-                    text: 'Acre'
-                },
-                labels: {
-                    fontstyle: 'Calibri, sans-serif'
-                }
-               }
+            options: {}
             });
         </script>
 
